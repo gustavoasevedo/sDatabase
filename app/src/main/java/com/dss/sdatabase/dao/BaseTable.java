@@ -19,6 +19,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by gustavo.vieira on 04/05/2015.
@@ -308,7 +309,7 @@ public class BaseTable {
     }
 
 
-    protected Object selectRawQuery(Class aClass,String query,String[] values)
+    protected ArrayList<Object> selectRawQuery(Class aClass, String query, String[] values)
             throws ClassNotFoundException, NoSuchMethodException,
             IllegalAccessException, InvocationTargetException,
             InstantiationException, InvalidTypeException{
@@ -318,12 +319,16 @@ public class BaseTable {
         Constructor<?> ctor = clazz.getConstructor();
         ctor.setAccessible(true);
 
+        ArrayList<Object> list = new ArrayList<>();
+
         Object object = ctor.newInstance();
 
         Cursor c = baseDB.getRawQuery(query,values);
 
         try {
-            if (c.moveToNext()) {
+            while (c.moveToNext()) {
+                object = ctor.newInstance();
+
                 Method[] methods = aClass.getMethods();
 
                 for(int i = 0;i < methods.length;i++) {
@@ -358,12 +363,14 @@ public class BaseTable {
                         }
                     }
                 }
+                list.add(object);
+
             }
         } finally {
             c.close();
         }
 
-        return object;
+        return list;
     }
 
     protected ArrayList<Object> selectListRawQuery(Class aClass,String query,String[] values)

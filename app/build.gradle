@@ -22,7 +22,7 @@ android {
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file:/Users/Digipronto/Desktop/sDatabase")
+            repository(url: "file:C:\\Users\\Gustavo\\Desktop\\sDatabase")
             pom.groupId = GROUP
             pom.artifactId = POM_ARTIFACT_ID
             pom.version = VERSION_NAME
