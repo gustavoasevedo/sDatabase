@@ -19,7 +19,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by gustavo.vieira on 04/05/2015.
@@ -435,6 +434,26 @@ public class BaseTable {
             c.close();
         }
         return list;
+    }
+
+
+    protected boolean deleteAll(){
+
+        Boolean b = baseDB.DeleteFieldsTable(tableName);
+
+        return b;
+    }
+
+    protected boolean deleteAll(String field,String[] values){
+
+        Boolean b = baseDB.DeleteFieldsTableWhere(tableName,field,values);
+
+        return b;
+    }
+
+
+    protected void dropTable(){
+        baseDB.dropTable(db,tableName);
     }
 
 }

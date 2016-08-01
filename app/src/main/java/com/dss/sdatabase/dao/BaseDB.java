@@ -35,6 +35,7 @@ public class BaseDB extends SQLiteOpenHelper {
     public BaseDB(Context context,String dbName, int dbVersion) {
         super(context, dbName, null, dbVersion);
         this.context = context;
+        this.database = dbName;
     }
 
     @Override
@@ -44,6 +45,12 @@ public class BaseDB extends SQLiteOpenHelper {
         sb.append(getTable());
         db.execSQL(sb.toString());
         onCreate(db);
+    }
+
+    public static void dropDatabase(Context context,String database){
+
+        context.deleteDatabase(database);
+
     }
 
     /**
@@ -79,6 +86,13 @@ public class BaseDB extends SQLiteOpenHelper {
 
         db.execSQL(sb.toString());
     }
+
+
+    public void dropTable(SQLiteDatabase db,String table){
+
+        db.execSQL("DROP TABLE IF EXISTS " + table);
+    }
+
 
     /**
      * Receive values from another class and insert on a table.
@@ -197,6 +211,22 @@ public class BaseDB extends SQLiteOpenHelper {
 
         return c;
     }
+
+    public Boolean DeleteFieldsTable(String table){
+
+        Boolean b = getWritableDatabase().delete(table,null,null) > 0;
+
+        return b;
+    }
+
+    public Boolean DeleteFieldsTableWhere(String table,String field,String[] args){
+
+        Boolean b = getWritableDatabase().delete(table,field,args) > 0;
+
+        return b;
+    }
+
+
 
 
     public Cursor getRawQuery(String query,String[] args) {
