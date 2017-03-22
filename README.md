@@ -5,7 +5,7 @@ This API is focused on improving the development of Sqlite databases on a native
 
 To put it on your project, just follow the instructions here:
 
-[![](https://jitpack.io/v/gustavoasevedo/sDatabase.svg)](https://jitpack.io/#gustavoasevedo/sDatabase)
+[![](https://jitpack.io/v/gustavoasevedo/sDatabase.svg)](https://jitpack.io/#gustavoasevedo/sDatabase/1.0)
 
 
 All the work is based on annotations.
