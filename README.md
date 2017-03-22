@@ -3,6 +3,11 @@ Android Sqlite API
 
 This API is focused on improving the development of Sqlite databases on a native Android App.
 
+To put it on your project, just follow the instructions here:
+
+[![](https://jitpack.io/v/gustavoasevedo/sDatabase.svg)](https://jitpack.io/#gustavoasevedo/sDatabase)
+
+
 All the work is based on annotations.
 
 For example, in your model you can tell one of your variables is on the db, so you need to asing his type,name on the database and if is
