@@ -3,9 +3,26 @@ Android Sqlite API
 
 This API is focused on improving the development of Sqlite databases on a native Android App.
 
-To put it on your project, just follow the instructions here:
+To put it on your project, just follow the instructions:
 
-[![](https://jitpack.io/v/gustavoasevedo/sDatabase.svg)](https://jitpack.io/#gustavoasevedo/sDatabase/1.0)
+Add to your gradle repositories:
+
+```
+    repositories {
+        maven { url  "http://dl.bintray.com/gustavoasevedo/sDatabase" }
+        ...
+    }
+```
+
+
+Add to your gradle dependencies:
+
+```
+dependencies {
+        compile 'com.dss.sDatabase:sDatabase:1.0.5'
+        ...
+    }
+```
 
 
 All the work is based on annotations.
