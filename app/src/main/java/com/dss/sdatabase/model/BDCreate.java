@@ -1,4 +1,4 @@
-package com.dss.sdatabase.model;
+package com.github.gustavoasevedo.model;
 
 /**
  * Created by gustavo.vieira on 04/05/2015.

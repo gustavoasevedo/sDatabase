@@ -1,4 +1,4 @@
-package com.dss.sdatabase;
+package com.github.gustavoasevedo;
 
 import org.junit.Test;
 

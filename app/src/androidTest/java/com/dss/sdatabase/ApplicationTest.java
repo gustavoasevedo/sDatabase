@@ -1,4 +1,4 @@
-package com.dss.sdatabase;
+package com.github.gustavoasevedo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,4 +1,4 @@
-package com.dss.sdatabase.model;
+package com.github.gustavoasevedo.model;
 
 import java.lang.reflect.Field;
 

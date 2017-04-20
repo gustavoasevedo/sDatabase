@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'idea'
 
 android {
     compileSdkVersion 25
@@ -13,10 +15,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 2
-        versionName "1.0.3"
-
-        multiDexEnabled true
+        versionCode 3
+        versionName "1.0.4"
     }
 
     compileOptions {
@@ -32,10 +32,41 @@ android {
     }
 }
 
+bintray {
+    user = 'gustavoasevedo'
+    key = 'sDatabase'
+
+    pkg {
+        repo = 'sDatabase'
+        name = 'sDatabase'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/gustavoasevedo/sDatabase.git'
+    }
+
+    version {
+        name = '1.0.4'
+        desc = 'Bintray Release 1.0.4'
+        released  = new Date()
+        vcsTag = '1.0.4'
+    }
+}
+
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file:C:\\Users\\gustavo\\Desktop")
+            pom.groupId = GROUP
+            pom.artifactId = POM_ARTIFACT_ID
+            pom.version = VERSION_NAME
+        }
+    }
+}
+
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:support-v4:25.1.0'
-    compile 'com.github.jitpack:gradle-simple:1.0'
-    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
 }
