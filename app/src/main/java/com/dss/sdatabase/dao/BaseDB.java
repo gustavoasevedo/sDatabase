@@ -1,4 +1,4 @@
-package com.github.gustavoasevedo.dao;
+package com.dss.sdatabase.dao;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -6,11 +6,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.github.gustavoasevedo.annotations.BaseDBFieldName;
-import com.github.gustavoasevedo.constant.ConstantException;
-import com.github.gustavoasevedo.exceptions.InvalidTypeException;
-import com.github.gustavoasevedo.model.BDCreate;
-import com.github.gustavoasevedo.model.BDInsert;
+import com.dss.sdatabase.annotations.BaseDBFieldName;
+import com.dss.sdatabase.constant.ConstantException;
+import com.dss.sdatabase.exceptions.InvalidTypeException;
+import com.dss.sdatabase.model.BDCreate;
+import com.dss.sdatabase.model.BDInsert;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

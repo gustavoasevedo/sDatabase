@@ -1,4 +1,4 @@
-package com.github.gustavoasevedo.dao;
+package com.dss.sdatabase.dao;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -12,13 +12,13 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-import com.github.gustavoasevedo.annotations.BaseDBFieldName;
-import com.github.gustavoasevedo.annotations.BaseDBMethodSetName;
-import com.github.gustavoasevedo.annotations.BaseDBPrimaryKey;
-import com.github.gustavoasevedo.annotations.BaseDBType;
-import com.github.gustavoasevedo.constant.ConstantException;
-import com.github.gustavoasevedo.exceptions.InvalidTypeException;
-import com.github.gustavoasevedo.model.BDCreate;
+import com.dss.sdatabase.annotations.BaseDBFieldName;
+import com.dss.sdatabase.annotations.BaseDBMethodSetName;
+import com.dss.sdatabase.annotations.BaseDBPrimaryKey;
+import com.dss.sdatabase.annotations.BaseDBType;
+import com.dss.sdatabase.constant.ConstantException;
+import com.dss.sdatabase.exceptions.InvalidTypeException;
+import com.dss.sdatabase.model.BDCreate;
 
 /**
  * Created by gustavo.vieira on 04/05/2015.

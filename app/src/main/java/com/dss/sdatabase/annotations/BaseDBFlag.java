@@ -1,4 +1,4 @@
-package com.github.gustavoasevedo.annotations;
+package com.dss.sdatabase.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

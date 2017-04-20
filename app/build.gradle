@@ -16,7 +16,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 3
-        versionName "1.0.4"
+        versionName VERSION_NAME
     }
 
     compileOptions {
@@ -44,10 +44,10 @@ bintray {
     }
 
     version {
-        name = '1.0.4'
-        desc = 'Bintray Release 1.0.4'
+        name = VERSION_NAME
+        desc = 'Bintray Release 1.0.5'
         released  = new Date()
-        vcsTag = '1.0.4'
+        vcsTag = VERSION_NAME
     }
 }
 
@@ -56,7 +56,7 @@ bintray {
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file:C:\\Users\\gustavo\\Desktop")
+            repository(url: "file:C:\\sDatabase")
             pom.groupId = GROUP
             pom.artifactId = POM_ARTIFACT_ID
             pom.version = VERSION_NAME

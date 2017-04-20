@@ -1,4 +1,4 @@
-package com.github.gustavoasevedo.constant;
+package com.dss.sdatabase.constant;
 
 /**
  * Created by digipronto on 01/03/16.

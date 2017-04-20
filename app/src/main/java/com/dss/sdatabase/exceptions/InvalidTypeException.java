@@ -1,4 +1,4 @@
-package com.github.gustavoasevedo.exceptions;
+package com.dss.sdatabase.exceptions;
 
 /**
  * Created by digipronto on 01/03/16.
