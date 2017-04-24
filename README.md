@@ -9,7 +9,7 @@ Add to your gradle repositories:
 
 ```
     repositories {
-        maven { url  "http://dl.bintray.com/gustavoasevedo/sDatabase" }
+        jcenter()
         ...
     }
 ```
