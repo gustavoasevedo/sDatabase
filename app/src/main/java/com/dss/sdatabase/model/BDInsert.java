@@ -8,8 +8,8 @@ import java.lang.reflect.Field;
 public class BDInsert {
 
     private Field field;
-    private String fieldName;
-    private Object fieldValue;
+    private String fieldName = new String();
+    private Object fieldValue = new Object();
 
 
     public BDInsert(Field field,String fieldName, Object fieldValue) {

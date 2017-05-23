@@ -68,19 +68,30 @@ public class BaseDB extends SQLiteOpenHelper {
         sb.append(" ");
         sb.append("(");
 
+        int size = coluns.size();
+
         for(BDCreate field : coluns) {
+            size --;
+
             sb.append(field.getFieldName());
             sb.append(" ");
             sb.append(field.getFieldType());
-            sb.append(", ");
 
+
+            if(size > 0) {
+                sb.append(", ");
+            }
         }
-        if(pk != "" || pk != null) {
-            sb.append("PRIMARY KEY(");
-            sb.append(pk);
-            sb.append("));");
-        }
-        else{
+
+        if (pk != null) {
+            if (!pk.equals("")) {
+                sb.append(", PRIMARY KEY(");
+                sb.append(pk);
+                sb.append("));");
+            } else {
+                sb.append(");");
+            }
+        }else{
             sb.append(");");
         }
 

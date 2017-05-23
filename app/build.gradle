@@ -45,7 +45,7 @@ bintray {
 
     version {
         name = VERSION_NAME
-        desc = 'Bintray Release 1.0.5'
+        desc = 'Bintray Release 1.0.9'
         released  = new Date()
         vcsTag = VERSION_NAME
     }
