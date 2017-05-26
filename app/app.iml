@@ -22,6 +22,32 @@
         <option name="PROJECT_TYPE" value="1" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="2" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-no-jdk" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="C:\Users\consultor5a.vieira\Desktop\Projetos\sdatabase\app\build\tmp\kotlin-classes\releaseUnitTest" />
+          <option name="classpath" value="C:\Users\consultor5a.vieira\.android\build-cache\4bef1eef43c72e886237655be02e1e9826f7cff3\output\jars\classes.jar;C:\Users\consultor5a.vieira\.android\build-cache\ef465cf2fabab9ff06b1b5631bf944ef74205d50\output\jars\classes.jar;C:\Users\consultor5a.vieira\.android\build-cache\80f59f9f4468a35685ce5d75b541d35f76b8aade\output\jars\classes.jar;C:\Users\consultor5a.vieira\.android\build-cache\a94fb354972443d12b5386edba08e390c99a253f\output\jars\classes.jar;C:\Users\consultor5a.vieira\.android\build-cache\a94fb354972443d12b5386edba08e390c99a253f\output\jars\libs\internal_impl-23.4.0.jar;C:\Users\consultor5a.vieira\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar;C:\Users\consultor5a.vieira\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jre7\1.1.2-4\e6a7403299b8f3126e3a1576c02e3f07ae5af6fa\kotlin-stdlib-jre7-1.1.2-4.jar;C:\Users\consultor5a.vieira\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.1.2-4\3f5f1498bdbb9611cb1413f794b3a3a5a6edef34\kotlin-stdlib-1.1.2-4.jar;C:\Users\consultor5a.vieira\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Users\consultor5a.vieira\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\consultor5a.vieira\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;C:\Users\consultor5a.vieira\Desktop\Projetos\sdatabase\app\build\intermediates\classes\release;C:\Users\consultor5a.vieira\AppData\Local\Android\Sdk\platforms\android-25\android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_release" />
+          <option name="jvmTarget" value="1.6" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.1" />
+          <option name="apiVersion" value="1.1" />
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="coroutinesWarn" value="true" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/intermediates/classes/debug" />
@@ -92,6 +118,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/ivy.xml" />
+      <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/poms" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
@@ -100,10 +127,13 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-annotations-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-23.4.0" level="project" />
+    <orderEntry type="library" exported="" name="kotlin-stdlib-1.1.2-4" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="hamcrest-core-1.3" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.4.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="junit-4.12" level="project" />
+    <orderEntry type="library" exported="" name="annotations-13.0" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-23.4.0" level="project" />
+    <orderEntry type="library" exported="" name="kotlin-stdlib-jre7-1.1.2-4" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.4.0" level="project" />
   </component>
 </module>
