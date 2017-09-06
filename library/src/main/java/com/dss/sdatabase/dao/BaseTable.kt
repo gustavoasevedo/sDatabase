@@ -171,6 +171,9 @@ open class BaseTable {
         } finally {
             c?.close()
         }
+
+        closeConnection()
+
         return list
 
     }
@@ -185,6 +188,7 @@ open class BaseTable {
 
         val `object` = ctor.newInstance()
 
+        openCoonection()
         val c = baseDB?.getWhere(tableName, fields, field, values)
 
         try {
@@ -223,6 +227,8 @@ open class BaseTable {
         } finally {
             c?.close()
         }
+
+        closeConnection()
 
         return `object`
     }
@@ -284,6 +290,10 @@ open class BaseTable {
         } finally {
             c?.close()
         }
+
+
+
+        closeConnection()
         return list
     }
 
@@ -300,6 +310,7 @@ open class BaseTable {
 
         var `object`: Any
 
+        openCoonection()
         val c = baseDB?.getRawQuery(query, values)
 
         try {
@@ -343,6 +354,8 @@ open class BaseTable {
         } finally {
             c?.close()
         }
+
+        closeConnection()
 
         return list
     }
@@ -404,6 +417,8 @@ open class BaseTable {
         } finally {
             c?.close()
         }
+
+        closeConnection()
         return list
     }
 
