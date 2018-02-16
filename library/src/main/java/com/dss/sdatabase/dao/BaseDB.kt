@@ -144,7 +144,7 @@ class BaseDB(internal var context: Context?, private val database: String // Dat
                 values.put(insert.fieldName, insert.fieldValue.toString())
 
                 //Verify if variable is boolean
-            } else if (insert.field?.type == Boolean::class.java) {
+            } else if (insert.field?.type!!.canonicalName == Boolean::class.javaObjectType.canonicalName) {
 
                 values.put(insert.fieldName, java.lang.Boolean.valueOf(insert.fieldValue.toString()))
             } else {

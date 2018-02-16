@@ -159,6 +159,9 @@ open class BaseTable {
 
                             variables[i].set(`object`, c.getString(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)))
 
+                        }else if(parameterizedType.toString() == Boolean::class.javaObjectType.toString()) {
+                            variables[i].set(`object`, c.getInt(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)) > 0)
+
                         } else {
                             throw InvalidTypeException(ConstantException.invalidtypeexception)
                         }
@@ -217,6 +220,9 @@ open class BaseTable {
                         } else if (parameterizedType === String::class.java || parameterizedType === Char::class.javaPrimitiveType) {
 
                             variables[i].set(`object`, c.getString(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)))
+
+                        }else if(parameterizedType.toString() == Boolean::class.javaObjectType.toString()) {
+                            variables[i].set(`object`, c.getInt(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)) > 0)
 
                         } else {
                             throw InvalidTypeException(ConstantException.invalidtypeexception)
@@ -277,6 +283,9 @@ open class BaseTable {
                         } else if (parameterizedType === String::class.java || parameterizedType === Char::class.javaPrimitiveType) {
 
                             variables[i].set(`object`, c.getString(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)))
+
+                        }else if(parameterizedType.toString() == Boolean::class.javaObjectType.toString()) {
+                            variables[i].set(`object`, c.getInt(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)) > 0)
 
                         } else {
                             throw InvalidTypeException(ConstantException.invalidtypeexception)
@@ -342,6 +351,9 @@ open class BaseTable {
                         } else if (parameterizedType === String::class.java || parameterizedType === Char::class.javaPrimitiveType) {
 
                             variables[i].set(`object`, c.getString(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)))
+
+                        }else if(parameterizedType.toString() == Boolean::class.javaObjectType.toString()) {
+                            variables[i].set(`object`, c.getInt(c.getColumnIndex(variables[i].getAnnotation<BaseDBFieldName>(BaseDBFieldName::class.java).value)) > 0)
 
                         } else {
                             throw InvalidTypeException(ConstantException.invalidtypeexception)
