@@ -19,7 +19,7 @@ Add to your gradle dependencies:
 
 ```
 dependencies {
-        compile 'com.dss.sDatabase:sDatabase:1.1.2'
+        compile 'com.dss.sDatabase:sDatabase:1.1.4'
         ...
     }
 ```
